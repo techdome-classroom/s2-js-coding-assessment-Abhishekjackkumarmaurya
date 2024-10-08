@@ -3,7 +3,9 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    let myArr = s.split("")
+    let myArr = s.split("");
+    const map = new Map();
+    map.set(())
 };
 
 module.exports = { isValid };
