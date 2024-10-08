@@ -15,9 +15,7 @@ var romanToInt = function(s) {
     
     let total = 0;
     
-    // Loop through each character in the string
     for (let i = 0; i < s.length; i++) {
-        // Get the current value and the next value
         let current = romanMap[s[i]];
         let next = romanMap[s[i + 1]];
 
