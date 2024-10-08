@@ -3,23 +3,25 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    let myArr = s.split("");
-    const map = new Map();
-    map.set('{','}');
-    map.set('(',')');
-    map.set('[',']');
-     let count = 0;
-     for ( let i =0; i<s.length;i++){
-        for(let j=i; j<myArr.length;j++){
-            if(map.get(myArr[i])== myArr[j]){
-                myArr[i],myArr[j]=0;
-                count+=2;
-            }
+    let let map = {
+        ')': '(',
+        '}': '{',
+        ']': '['
+    };
+
+    for (let i = 0; i < s.length; i++) {
+        let char = s[i];
+
+        if (char === '(' || char === '{' || char === '[') {
+            stack.push(char);
+        } else if (stack.length > 0 && stack[stack.length - 1] === map[char]) {
+            stack.pop();
+        } else {
+            return false;
         }
-     }
-     if(myArr.length==count)
-        return true;
-    return false;
+    }
+
+    return stack.length === 0;
 };
 
 module.exports = { isValid };
