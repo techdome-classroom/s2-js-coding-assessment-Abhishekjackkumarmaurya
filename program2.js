@@ -13,7 +13,9 @@ var romanToInt = function(s) {
         'D':500,
         'M':1000
     };
-    for 
+    for (let i=0; i<s.length-1;i++){
+        if(rom[s[]])
+    }
 };
 
 
