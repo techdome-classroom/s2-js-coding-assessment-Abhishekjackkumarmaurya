@@ -3,25 +3,34 @@
  * @return {number}
  */
 var romanToInt = function(s) {
-    let count =0;
-    const rom = {
-        'I':1,
-        'V':5,
-        'X':10,
-        'L':50,
-        'C':100,
-        'D':500,
-        'M':1000
+    const romanMap = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
     };
-    for (let i=0; i<s.length-1;i++){
-        if(rom[s[i]]< rom[s[i+1]]){
-            count -= rom[s[i+1]];
+    
+    let total = 0;
+    
+    // Loop through each character in the string
+    for (let i = 0; i < s.length; i++) {
+        // Get the current value and the next value
+        let current = romanMap[s[i]];
+        let next = romanMap[s[i + 1]];
 
-        }else{
-            count +=rom[s[i]];
+        // If current value is less than the next, subtract current from total
+        if (current < next) {
+            total -= current;
+        } else {
+            // Otherwise, add the current value to the total
+            total += current;
         }
     }
-    return count+ rom[s[s.length-1]];
+    
+    return total;
 };
 
 
