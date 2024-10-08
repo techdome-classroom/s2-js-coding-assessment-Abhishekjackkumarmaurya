@@ -21,7 +21,7 @@ var romanToInt = function(s) {
             count +=rom[s[i]];
         }
     }
-    return count+ rom[s[s.length-1]]
+    return count+ rom[s[s.length-1]];
 };
 
 
