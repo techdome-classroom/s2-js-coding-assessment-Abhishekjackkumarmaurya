@@ -18,6 +18,8 @@ var isValid = function(s) {
         }
      }
      if(myArr.length==t)
+        return true;
+    return false;
 };
 
 module.exports = { isValid };
