@@ -17,7 +17,7 @@ var isValid = function(s) {
             }
         }
      }
-     if(myArr.length)
+     if(myArr.length==t)
 };
 
 module.exports = { isValid };
