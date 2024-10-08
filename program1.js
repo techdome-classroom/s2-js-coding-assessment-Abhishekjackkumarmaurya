@@ -8,7 +8,7 @@ var isValid = function(s) {
     map.set('{','}');
     map.set('(',')');
     map.set('[',']');
-     let t = 0;
+     let count = 0;
      for ( let i =0; i<s.length;i++){
         for(let j=0; j<myArr.length;j++){
             if(map.get(myArr[i])== myArr[j]){
