@@ -6,7 +6,7 @@ var romanToInt = function(s) {
     let count =0;
     const rom = {
         'I':1,
-        'I':1,
+        'V':1,
         'I':1,
         'I':1,
         'I':1,
