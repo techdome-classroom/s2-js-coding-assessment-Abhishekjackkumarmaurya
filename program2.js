@@ -16,7 +16,9 @@ var romanToInt = function(s) {
     for (let i=0; i<s.length-1;i++){
         if(rom[s[i]]< rom[s[i+1]]){
             count -= rom[s[i+1]];
-            
+
+        }else{
+            count
         }
     }
 };
