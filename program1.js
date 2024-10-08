@@ -14,8 +14,8 @@ var isValid = function(s) {
         let char =s[i];
         if(char === '(' || char === '{' || char ==='['){
             stack.push(char);
-            
-        }
+
+        }else if()
     }
 
 
