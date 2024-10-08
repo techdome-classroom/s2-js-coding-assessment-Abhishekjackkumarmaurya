@@ -10,7 +10,7 @@ var isValid = function(s) {
     map.set('[',']');
      let count = 0;
      for ( let i =0; i<s.length;i++){
-        for(let j=0; j<myArr.length;j++){
+        for(let j=i; j<myArr.length;j++){
             if(map.get(myArr[i])== myArr[j]){
                 myArr[i],myArr[j]=0;
                 count+=2;
