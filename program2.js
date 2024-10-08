@@ -22,7 +22,6 @@ var romanToInt = function(s) {
         if (current < next) {
             total -= current;
         } else {
-            // Otherwise, add the current value to the total
             total += current;
         }
     }
