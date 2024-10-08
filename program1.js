@@ -17,7 +17,7 @@ var isValid = function(s) {
             }
         }
      }
-     if(myArr.length==t)
+     if(myArr.length==count)
         return true;
     return false;
 };
