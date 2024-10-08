@@ -22,7 +22,7 @@ var isValid = function(s) {
             return false;
         }
     }
-    
+    return stack.length===0;
 
 
     
